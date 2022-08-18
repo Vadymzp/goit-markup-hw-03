@@ -13,142 +13,158 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <header class="main-header">
-      <nav class="header-nav">
-        <a href="./index.html" class="logo">Web</a
-        ><span class="accent">Studio</span>
-        <ul class="header-nav-list">
+    <div class="container">
+      <header class="portfolio-header">
+        <nav class="header-nav">
+          <a href="./index.html" class="logo">Web</a
+          ><span class="accent">Studio</span>
+          <ul class="header-nav-list">
+            <li class="nav-item">
+              <a href="./index.html" class="link">Студія</a>
+            </li>
+            <li>
+              <a href="./portfolio.html" class="link current">Портфоліо</a>
+            </li>
+            <li class="nav-item"><a href="" class="link">Контакти</a></li>
+          </ul>
+        </nav>
+        <ul class="menu">
           <li class="nav-item">
-            <a href="./index.html" class="link">Студія</a>
+            <a href="malito:info@devstudio.com" class="header-contacts"
+              >info@devstudio.com</a
+            >
           </li>
-          <li>
-            <a href="./portfolio.html" class="link current">Портфоліо</a>
+          <li class="contacts-item">
+            <a href="tel:+380961111111" class="header-contacts"
+              >+38 096 111 11 11</a
+            >
           </li>
-          <li class="nav-item"><a href="" class="link">Контакти</a></li>
         </ul>
-      </nav>
-      <ul class="menu">
-        <li class="nav-item">
-          <a href="malito:info@devstudio.com" class="header-contacts"
-            >info@devstudio.com</a
-          >
-        </li>
-        <li class="contacts-item">
-          <a href="tel:+380961111111" class="header-contacts"
-            >+38 096 111 11 11</a
-          >
-        </li>
-      </ul>
-    </header>
-
+      </header>
+    </div>
     <main>
-      <section class="section-porfolio">
-        <h1 hidden class="title">Портфоліо</h1>
-        <ul>
-          <li><button type="button" class="filter-btn current">Усі</button></li>
-          <li><button type="button" class="filter-btn">Веб-сайти</button></li>
-          <li><button type="button" class="filter-btn">Додатки</button></li>
-          <li><button type="button" class="filter-btn">Дизайн</button></li>
-          <li><button type="button" class="filter-btn">Маркетинг</button></li>
-        </ul>
-        <ul>
-          <li class="portfolio-item">
-            <a href="" class="portfolio-link">
-              <img src="./images/imgtechno.jpg" alt="Веб-сайт" width="370" />
-              <h2 class="portfolio-title">Технокряк</h2>
-              <p class="portfolio-text">Веб-сайт</p>
-            </a>
-          </li>
-          <li class="portfolio-item">
-            <a href="" class="portfolio-link">
-              <img src="./images/imgbasket.jpg" alt="Дизайн" width="370" />
-              <h2 class="portfolio-title">Постер New Orlean vs Golden Star</h2>
-              <p class="portfolio-text">Дизайн</p>
-            </a>
-          </li>
-          <li class="portfolio-item">
-            <a href="" class="portfolio-link">
-              <img src="./images/imgseafood.jpg" alt="Додаток" width="370" />
-              <h2 class="portfolio-title">Ресторан Seafood</h2>
-              <p class="portfolio-text">Додаток</p>
-            </a>
-          </li>
-          <li class="portfolio-item">
-            <a href="" class="portfolio-link">
-              <img
-                src="./images/imgheadphones.jpg"
-                alt="Маркетинг"
-                width="370"
-              />
-              <h2 class="portfolio-title">Проєкт Prime</h2>
-              <p class="portfolio-text">Маркетинг</p>
-            </a>
-          </li>
-          <li class="portfolio-item">
-            <a href="" class="portfolio-link">
-              <img src="./images/imgbox.jpg" alt="Додаток" width="370" />
-              <h2 class="portfolio-title">Проєкт Boxes</h2>
-              <p class="portfolio-text">Додаток</p>
-            </a>
-          </li>
-          <li class="portfolio-item">
-            <a href="" class="portfolio-link">
-              <img src="./images/imgmon.jpg" alt="Веб-сайт" width="370" />
-              <h2 class="portfolio-title">Inspiration has no Borders</h2>
-              <p class="portfolio-text">Веб-сайт</p>
-            </a>
-          </li>
-          <li class="portfolio-item">
-            <a href="" class="portfolio-link">
-              <img src="./images/imgjour.jpg" alt="Дизайн" width="370" />
-              <h2 class="portfolio-title">Видання Limited Edition</h2>
-              <p class="portfolio-text">Дизайн</p>
-            </a>
-          </li>
-          <li class="portfolio-item">
-            <a href="" class="portfolio-link">
-              <img src="./images/imgproject.jpg" alt="Маркетинг" width="370" />
-              <h2 class="portfolio-title">Проєкт LAB</h2>
-              <p class="portfolio-text">Маркетинг</p>
-            </a>
-          </li>
-          <li class="portfolio-item">
-            <a href="" class="portfolio-link">
-              <img src="./images/imgadd.jpg" alt="Веб-сайт" width="370" />
-              <h2 class="portfolio-title">Growing Business</h2>
-              <p class="portfolio-text">Додаток</p>
-            </a>
-          </li>
-        </ul>
-      </section>
+      <div class="container">
+        <section class="section-porfolio">
+          <h1 hidden class="title">Портфоліо</h1>
+          <ul class="menu-filter">
+            <li>
+              <button type="button" class="filter-btn current">Усі</button>
+            </li>
+            <li><button type="button" class="filter-btn">Веб-сайти</button></li>
+            <li><button type="button" class="filter-btn">Додатки</button></li>
+            <li><button type="button" class="filter-btn">Дизайн</button></li>
+            <li><button type="button" class="filter-btn">Маркетинг</button></li>
+          </ul>
+          <ul>
+            <li class="portfolio-item">
+              <a href="" class="portfolio-link">
+                <img src="./images/imgtechno.jpg" alt="Веб-сайт" width="370" />
+                <h2 class="portfolio-title">Технокряк</h2>
+                <p class="portfolio-text">Веб-сайт</p>
+              </a>
+            </li>
+            <li class="portfolio-item">
+              <a href="" class="portfolio-link">
+                <img src="./images/imgbasket.jpg" alt="Дизайн" width="370" />
+                <h2 class="portfolio-title">
+                  Постер New Orlean vs Golden Star
+                </h2>
+                <p class="portfolio-text">Дизайн</p>
+              </a>
+            </li>
+            <li class="portfolio-item">
+              <a href="" class="portfolio-link">
+                <img src="./images/imgseafood.jpg" alt="Додаток" width="370" />
+                <h2 class="portfolio-title">Ресторан Seafood</h2>
+                <p class="portfolio-text">Додаток</p>
+              </a>
+            </li>
+            <li class="portfolio-item">
+              <a href="" class="portfolio-link">
+                <img
+                  src="./images/imgheadphones.jpg"
+                  alt="Маркетинг"
+                  width="370"
+                />
+                <h2 class="portfolio-title">Проєкт Prime</h2>
+                <p class="portfolio-text">Маркетинг</p>
+              </a>
+            </li>
+            <li class="portfolio-item">
+              <a href="" class="portfolio-link">
+                <img src="./images/imgbox.jpg" alt="Додаток" width="370" />
+                <h2 class="portfolio-title">Проєкт Boxes</h2>
+                <p class="portfolio-text">Додаток</p>
+              </a>
+            </li>
+            <li class="portfolio-item">
+              <a href="" class="portfolio-link">
+                <img src="./images/imgmon.jpg" alt="Веб-сайт" width="370" />
+                <h2 class="portfolio-title">Inspiration has no Borders</h2>
+                <p class="portfolio-text">Веб-сайт</p>
+              </a>
+            </li>
+            <li class="portfolio-item">
+              <a href="" class="portfolio-link">
+                <img src="./images/imgjour.jpg" alt="Дизайн" width="370" />
+                <h2 class="portfolio-title">Видання Limited Edition</h2>
+                <p class="portfolio-text">Дизайн</p>
+              </a>
+            </li>
+            <li class="portfolio-item">
+              <a href="" class="portfolio-link">
+                <img
+                  src="./images/imgproject.jpg"
+                  alt="Маркетинг"
+                  width="370"
+                />
+                <h2 class="portfolio-title">Проєкт LAB</h2>
+                <p class="portfolio-text">Маркетинг</p>
+              </a>
+            </li>
+            <li class="portfolio-item">
+              <a href="" class="portfolio-link">
+                <img src="./images/imgadd.jpg" alt="Веб-сайт" width="370" />
+                <h2 class="portfolio-title">Growing Business</h2>
+                <p class="portfolio-text">Додаток</p>
+              </a>
+            </li>
+          </ul>
+        </section>
+      </div>
     </main>
 
-    <footer class="footer">
-      <a href="./index.html" class="footer-logo">Web</a
-      ><span class="footer-accent">Studio</span>
-      <address class="footer-adress">
-        <ul>
-          <li>
-            <a href="" class="footer-location"
-              >м. Київ, пр-т Лесі Українки, 26</a
-            >
-          </li>
-          <li>
-            <a href="malito:info@example.com" class="footer-contacts"
-              >info@example.com</a
-            >
-          </li>
-          <li>
-            <a href="tel:+380991111111" class="footer-contacts"
-              >+38 099 111 11 11</a
-            >
-          </li>
-        </ul>
-      </address>
-    </footer>
+    <div class="container">
+      <footer class="footer">
+        <a href="./index.html" class="footer-logo">Web</a
+        ><span class="footer-accent">Studio</span>
+        <address class="footer-adress">
+          <ul>
+            <li>
+              <a href="" class="footer-location"
+                >м. Київ, пр-т Лесі Українки, 26</a
+              >
+            </li>
+            <li>
+              <a href="malito:info@example.com" class="footer-contacts"
+                >info@example.com</a
+              >
+            </li>
+            <li>
+              <a href="tel:+380991111111" class="footer-contacts"
+                >+38 099 111 11 11</a
+              >
+            </li>
+          </ul>
+        </address>
+      </footer>
+    </div>
   </body>
 </html>
